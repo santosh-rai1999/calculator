@@ -1,0 +1,113 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.items-container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ margin: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+p {
+    font-weight: bold;
+}
+img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 400px;
+    transition: all 0.3 ease;
+}
+img:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #949494;
+  }
+  
+  .calculator {
+    position: relative;
+    display: grid;
+    border: 5px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    background: #f9f9f9;
+  }
+  
+  .calculator .value {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .calculator span {
+    display: grid;
+    width: 75px;
+    height: 75px;
+    background: #505050;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  .calculator span:active {
+    background: rgb(255, 163, 26);
+    color: #fff;
+  }
+  
+  .calculator span.clear {
+    grid-column: span 2;
+    width: 150px;
+    background: rgb(255, 163, 26);
+    
+  }
+  .calculator span.clear:hover{
+    transition: all 0.3s ease;
+    background-color: rgb(142, 88, 0);
+
+  }
+  
+  .calculator span.plus {
+    grid-row: span 2;
+    height: 120px;
+  }
+  
+  .calculator span.equal {
+    background: rgb(255, 163, 26);
+    grid-column: span 2;
+    width: 150px;
+    
+  }
+  .calculator span.equal:hover {
+    transition: all 0.3s ease;
+    background-color:  rgb(142, 88, 0);
+  }
